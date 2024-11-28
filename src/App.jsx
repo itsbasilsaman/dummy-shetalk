@@ -7,7 +7,7 @@ import FeaturesTwo from './assets/components/FeaturesTwo'
 import FeatureThree from './assets/components/FeatureThree'
 import FeatureFour from './assets/components/FeatureFour'
 import FeatureFive from './assets/components/FeatureFive'
-import FeatureSix from './assets/components/FeatureSix'
+// import FeatureSix from './assets/components/FeatureSix'
 import FeatureSeven from './assets/components/FeatureSeven'
 import Footer from './assets/components/Footer'
  
@@ -21,7 +21,7 @@ import Footer from './assets/components/Footer'
        <FeatureThree/>
        <FeatureFour/>
        <FeatureFive/>
-       <FeatureSix/>
+       {/* <FeatureSix/> */}
        <FeatureSeven/>
        <Footer/>
        {/* <ReactApp/> */}

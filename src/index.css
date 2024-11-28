@@ -5495,8 +5495,7 @@ figcaption {
 .image.first-perks {
   z-index: 1;
   width: 100%;
-  max-width: 51%;
-  box-shadow: 0 12px 74px 0 var(--shadow-mockup);
+  max-width: 71%;
   border-radius: 40px;
   position: absolute;
 }
@@ -5508,11 +5507,10 @@ figcaption {
   border-radius: 17px;
   margin-right: 25px;
 }
-
+ 
 .image.second-perks {
   width: 100%;
   max-width: 51%;
-  box-shadow: 0 12px 74px 0 var(--shadow-mockup);
   border-radius: 40px;
   position: absolute;
 }
@@ -6088,10 +6086,25 @@ figcaption {
 }
 
 .home-features-grid {
+  display: grid;
   grid-column-gap: 24px;
   grid-row-gap: 40px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columns overall */
 }
+
+.home-features-grid > div:nth-child(1) {
+  grid-column: span 2; /* Makes the first div span 2 columns on the first row */
+}
+
+ 
+
+/* The remaining divs will automatically go into the second row */
+.home-features-grid > div:nth-child(3),
+.home-features-grid > div:nth-child(4),
+.home-features-grid > div:nth-child(5) {
+  /* No special styles needed for these */
+}
+
 
 .home-hero-wrapper, .first-perks-wrapper {
   justify-content: space-between;
@@ -6241,6 +6254,9 @@ figcaption {
 
 .cta-content {
   max-width: 548px;
+  position: absolute;
+  right: 6%;
+  top: 22%;
   flex: 1;
   margin-right: 30px;
 }
@@ -9226,9 +9242,7 @@ figcaption {
     z-index: 98;
   }
 
-  .home-features-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+  
 
   .home-hero-wrapper {
     flex-direction: column;
@@ -10819,9 +10833,16 @@ figcaption {
   }
 
   .home-features-grid {
-    grid-row-gap: 35px;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; /* Single column in mobile view */
+    /* grid-row-gap: 35px; */ 
+    display: flex;
+    flex-direction: column;
   }
+/*   
+  .home-features-grid > div {
+    grid-column: 1 / -1; /* Ensure each grid item spans across the entire row */
+    /* width: 100%;  */
+  /* }  */
 
   .card-home-feature-content {
     max-width: 550px;
@@ -13301,3 +13322,63 @@ figcaption {
 .hero-image-wrapper .hero-image-wrapper-one .image {
   animation: loadImageFromTop 1s ease-out forwards;
 }
+
+/* Initial state (hidden and moved down slightly) */
+.first-perks-content {
+  opacity: 0;
+  transform: translate3d(0, 80px, 0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Final state (visible and in place) */
+.first-perks-content.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+
+
+@keyframes shrinkGrow {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9); /* Shrink the image */
+  }
+  100% {
+    transform: scale(1.1); /* Return to original size */
+  }
+}
+
+.screenshot-image {
+  animation: scaleUpDown 3s ease-in-out infinite;
+ }
+ @keyframes scaleUpDown {
+  0% {
+    transform: scale(1);  
+  }
+  50% {
+    transform: scale(1.03);  
+  }
+  100% {
+    transform: scale(1); 
+}
+}
+
+
+
+/*  */
+
+/* Add this CSS to animate the text */
+.second-perks-content {
+  opacity: 0;
+  transform: translateY(40px); /* Starts below the position */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.second-perks-content.visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to its final position */
+}
+
+ 

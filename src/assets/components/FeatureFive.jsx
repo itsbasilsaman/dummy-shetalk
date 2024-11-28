@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from '../New folder/12.png'
 
 function FeatureFive() {
   return (
@@ -11,7 +12,7 @@ function FeatureFive() {
         >
           <div className="image-wrapper first-perks">
             <img
-              src="../cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b135e63b585407713c3d57_image-home-features-app-x-template.png"
+              src={Image}
               alt="Digital Wallet - App X Webflow Template"
               data-w-id="d40c5c42-153e-bd02-a8aa-0b469105f4c3"
               style={{
@@ -25,7 +26,7 @@ function FeatureFive() {
                   "translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                 
               }}
-              className="image first-perks"
+              className="image first-perks  "
             />
             <img
               src="../cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b14960390524eed37f8c79_bg-home-achievements-app-x-template.jpg"
@@ -52,11 +53,11 @@ function FeatureFive() {
             className="home-achievements-content"
           >
             <h2 className="title home-achievements">
-              Used and trusted by <br />a community of millions
+            She Talks Impact: Empowering Women, Transforming Lives
+
             </h2>
             <p className="paragraph home-achievements">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit in
-              consequat sollicitudin adipiscing facilisi sit et hendrerit diam.
+            Thousands of women worldwide have found support, guidance, and community through She Talks, creating a vibrant network of emotional wellness.
             </p>
             <div className="w-layout-grid home-achievements-grid">
               <div className="card home-achievement">

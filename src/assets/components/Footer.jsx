@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../PINK LOGO.png'
 
 function Footer() {
   return (
@@ -17,7 +18,7 @@ function Footer() {
                 className="footer-logo-container w-inline-block w--current"
               >
                 <img
-                  src="../cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/626b3eee89bf7852bd4b27e8_applfy-x-webflow-template-logo.png"
+                  src={Logo}
                   alt="Appfly X Webflow Template - Logo"
                   className="footer-logo"
                 />
