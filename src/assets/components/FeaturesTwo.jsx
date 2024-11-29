@@ -32,11 +32,11 @@ function FeaturesTwo() {
                 Explore What Makes She Talks the Ultimate Support Hub
               </h2>
             </div>
-            <div className="split-content content-top-home-features-right">
+            {/* <div className="split-content content-top-home-features-right">
               <a href="features.html" className="button-primary w-button">
                 Browse features
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Features Grid Section */}

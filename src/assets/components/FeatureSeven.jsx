@@ -24,7 +24,7 @@ function FeatureSeven() {
   })
 
   return (
-    <div className="section cta">
+    <div className="section cta  ">
       <div className="container-default w-container">
         <div className="cta-main-wrapper">
           <div

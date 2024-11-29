@@ -3897,13 +3897,17 @@ figcaption {
   padding: 22px 40px;
   font-weight: 800;
   line-height: 1.111em;
-  transition:  all .3s;
+  transition:  all .4s;
+  border: 2px solid transparent;
 }
+ 
 
 .button-primary:hover {
-  color: var(--neutral-100);
-  background-color: rgba(10, 9, 25, 0.91);
+   
+  background-color: transparent;
   transform: scale(0.95);
+  border: 2px solid black;
+  color: black;
 }
 
 .button-primary.small {
@@ -5336,7 +5340,7 @@ figcaption {
 
 .image-wrapper.first-perks {
   width: 100%;
-  max-width: 576px;
+  max-width: 476px;
   border-radius: 60px;
   justify-content: center;
   margin-right: 20px;
@@ -5344,7 +5348,7 @@ figcaption {
 }
 
 .image-wrapper.second-perks {
-  max-width: 579px;
+  max-width: 476px;
   border-radius: 60px;
   justify-content: center;
   position: relative;
@@ -5476,7 +5480,7 @@ figcaption {
 }
 
 .image.card-home-feature-icon {
-  width: 72px;
+  width: 70px;
   min-height: 72px;
   min-width: 72px;
   border-radius: 22px;
@@ -5537,9 +5541,9 @@ figcaption {
 }
 
 .image.cta {
-  max-width: 38%;
+  max-width: 47%;
   min-width: 364px;
-  margin-top: -143px;
+  margin-top: 13px;
   margin-bottom: -184px;
 }
 
@@ -6023,6 +6027,7 @@ figcaption {
   left: 0%;
   right: 0%;
 }
+ 
 
 .bg.feature {
   z-index: -1;
@@ -6355,7 +6360,7 @@ figcaption {
   max-height: 483px;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 88px;
+  padding: 60px 88px 60px 20px;
   display: flex;
   position: relative;
 }
@@ -6656,6 +6661,10 @@ figcaption {
   left: 0%;
   right: 0%;
   overflow: hidden;
+}
+
+.cta-bg-wrapper  img {
+  
 }
 
 .blog-newsletter-form-block {
@@ -7746,6 +7755,7 @@ figcaption {
   align-items: center;
   display: flex;
 }
+
  
 
 .download-android-icon {
@@ -7826,30 +7836,42 @@ figcaption {
   position: relative;
 }
 .hero-image-wrapper-one {
-  border-radius: 12px;
+  border-radius: 60px;
     width: 100%;
     height: 618px;
     max-width: 558px;
     position: relative;
     
     /* Add linear gradient background */
-    background: linear-gradient(45deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
+    background: linear-gradient(45deg, rgba(255, 0, 150, 0.8),#c35063d6 , #9d2e57);
   
     /* Set animation for the gradient */
     background-size: 400% 400%;
-    animation: gradientAnimation 5s ease infinite;
+    animation: gradientAnimation 5s ease infinite , slideInFromRight 1s ease-out forwards; ;
+    
   }
+/* 
+  #9d2e57, #d7596e, #e57070, #ad5352 */
   
   /* Define the animation keyframes */
   @keyframes gradientAnimation {
     0% {
-      background-position: 0% 50%;
+      background-position: 0% 0%;
     }
     50% {
       background-position: 100% 50%;
     }
     100% {
       background-position: 0% 50%;
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(10%); /* Start off-screen to the right */
+    }
+    100% {
+      transform: translateX(0);    /* Move to its final position */
     }
   }
   
@@ -9113,7 +9135,7 @@ figcaption {
   .image.cta {
     max-width: 364px;
     min-width: auto;
-    margin-top: 0;
+    margin-top: 78px;
     margin-bottom: -308px;
   }
 
@@ -9973,6 +9995,9 @@ figcaption {
     margin-bottom: 16px;
     font-size: 42px;
   }
+  .home-head-content {
+    height: 122px;
+  }
 
   h2 {
     margin-bottom: 10px;
@@ -10671,7 +10696,7 @@ figcaption {
   }
 
   .image.card-home-feature {
-    max-width: 274px;
+    max-width: 294px;
     margin-bottom: -309px;
     margin-left: auto;
     margin-right: auto;
@@ -10889,8 +10914,9 @@ figcaption {
   }
 
   .cta-content {
-    margin-top: 76px;
+    margin-top: -70px;
     margin-bottom: 50px;
+    font-size: 23px;
   }
 
   .footer-content-top {
@@ -11636,6 +11662,7 @@ figcaption {
     width: auto;
     padding-left: 15px;
     padding-right: 15px;
+    display: none;
   }
 
   .button-primary.download-app._2-buttons-button {
@@ -11723,7 +11750,7 @@ figcaption {
 
   .section.home-hero {
     padding-top: 45px;
-    padding-bottom: 92px;
+    padding-bottom: 0px;
   }
 
   .section.bg-neutral-200.faqs {
@@ -12461,6 +12488,7 @@ figcaption {
 
   .first-perks-content {
     margin-bottom: 40px;
+    padding: 14px 15px;
   }
 
   .first-perks-grid {
@@ -12477,6 +12505,7 @@ figcaption {
 
   .second-perks-content {
     margin-bottom: 40px;
+    padding: 14px 15px;
   }
 
   .second-perk-wrapper {
@@ -12497,6 +12526,7 @@ figcaption {
     grid-template-columns: 1fr;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 65px;
   }
 
   .card-home-achievement-number {
@@ -13380,5 +13410,8 @@ figcaption {
   opacity: 1;
   transform: translateY(0); /* Move to its final position */
 }
+
+
+
 
  

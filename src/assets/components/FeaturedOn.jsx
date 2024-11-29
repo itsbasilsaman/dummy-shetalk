@@ -29,30 +29,22 @@ function FeaturedOn() {
             variants={variants}
             transition={{ duration: 0.6, staggerChildren: 0.4 }}
           >
-            <motion.img
-              src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/6554f29340d8c7070133de9a_agency-logo-app-x-webflow-template.svg"
-              alt="Appfly X - Agency Logo"
-              className="image home-company-logo google"
-              variants={variants}
-            />
-            <motion.img
-              src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/6554f29360940145b2837a0d_application-logo-app-x-webflow-template.svg"
-              alt="Appfly X - Application Logo"
-              className="image home-company-logo"
-              variants={variants}
-            />
-            <motion.img
-              src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/6554f293def185924bbbdc50_business-logo-app-x-webflow-template.svg"
-              alt="Appfly X - Business Logo"
-              className="image home-company-logo youtube"
-              variants={variants}
-            />
-            <motion.img
-              src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/6554f29360d6bd89284d6e79_company-logo-app-x-webflow-template.svg"
-              alt="Appfly X - Company Logo"
-              className="image home-company-logo"
-              variants={variants}
-            />
+            <motion.p className='text-center'>
+            Your voice is powerful, your story matters, and together we can create a world where women feel heard, supported, and empowered to thrive
+            </motion.p>
+              
+            {/* <motion.p>
+           story matters, and together we can 
+            </motion.p>
+               
+            <motion.p>
+            create a world where women feel heard,
+            </motion.p>
+               
+            <motion.p>
+            supported, and empowered to thrive
+            </motion.p> */}
+             
           </motion.div>
         </motion.div>
       </div>

@@ -31,13 +31,13 @@ const HomeHero = () => {
         <div className="home-hero-wrapper">
           <div className="home-hero-content">
             <h1
-              className={`sm:h-[230px] ${animateText ? 'text-animate' : ''}`}
+              className={`sm:h-[230px] ${animateText ? 'text-animate' : ''} home-head-content`}
               style={{
                 transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)',
                 opacity: 1,
               }}
             >
-              {displayedText}
+             She Talk: Your space to grow, heal and shine.
             </h1>
             <p
               className={`paragraph-large home-hero ${animateText ? 'text-animate' : ''}`}
@@ -56,7 +56,7 @@ const HomeHero = () => {
               }}
             >
               <a
-                href="https://www.apple.com/app-store/"
+                href="https://play.google.com/store/apps/details?id=com.shetalks"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button-primary download-app _2-buttons-button w-inline-block"
@@ -67,7 +67,7 @@ const HomeHero = () => {
                 </div>
               </a>
               <a
-                href="https://play.google.com/"
+                href="https://play.google.com/store/apps/details?id=com.shetalks"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button-primary download-app w-inline-block"

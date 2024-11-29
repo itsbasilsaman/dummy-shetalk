@@ -4,8 +4,8 @@ import Image from '../New folder/12.png'
 function FeatureFive() {
   return (
     <>
-      <div className="section home-achievements">
-      <div className="container-default home-achievements w-container">
+      <div className="section home-achievements  ">
+      <div className="container-default home-achievements w-container sm:pb-[30px]">
         <div
           data-w-id="aba48c1d-8b71-82d5-66d6-5165f00fbc25"
           className="home-achievements-wrapper"
