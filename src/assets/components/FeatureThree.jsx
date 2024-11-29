@@ -33,13 +33,14 @@ function FeatureThree() {
         <div className="first-perks-wrapper">
         <div className="image-wrapper first-perks">
             <img
-              src="../cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60d64725a20746b4b54c1196_bg-1-perks-app-x-template.jpg"
+              // src="../cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60d64725a20746b4b54c1196_bg-1-perks-app-x-template.jpg"
               srcSet="https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60d64725a20746b4b54c1196_bg-1-perks-app-x-template-p-500.jpeg 500w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60d64725a20746b4b54c1196_bg-1-perks-app-x-template-p-1080.jpeg 1080w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60d64725a20746b4b54c1196_bg-1-perks-app-x-template.jpg 1152w"
               data-w-id="40cf2ef2-bb08-8ac9-eacd-c1000ecd8a9b"
               sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, (max-width: 991px) 720px, (max-width: 1919px) 50vw, 576px"
               alt=""
               className="bg first-perks"
             />
+            
             <img
               src={Image}
               alt="App - App X Webflow Template"

@@ -566,6 +566,27 @@ label {
 .w-input[disabled]:not(.w-input-disabled), .w-select[disabled]:not(.w-input-disabled), .w-input[readonly], .w-select[readonly], fieldset[disabled]:not(.w-input-disabled) .w-input, fieldset[disabled]:not(.w-input-disabled) .w-select {
   background-color: #eee;
 }
+.navbar-box {
+  /* background-color:rgba(0, 0, 0, 0.26); */
+  background: linear-gradient(45deg, rgba(255, 0, 149, 0.336),#ce8afe51 , #00000053);
+  padding: 11px 19px;
+  border-radius: 8px;
+  /* filter: blur(0.5px); */
+   /* Blur the background only */
+}
+.navbar-box a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 9px;
+  transition: all 0.6s;
+  border-radius: 4px;
+}
+.navbar-box a:hover {
+  color: white;
+  background-color: #000;
+  cursor: pointer;
+}
 
 textarea.w-input, textarea.w-select {
   height: auto;
@@ -4907,7 +4928,9 @@ figcaption {
 }
 .title.feature-text {
   font-weight: 400;
-  font-size: 27px;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
   margin: 0px 55px;
   background: linear-gradient(45deg, rgba(10, 10, 10, 0.8),#c35063d6 , #000000);
   background-size: 200%; /* Make the background twice the width */
@@ -4936,6 +4959,7 @@ figcaption {
 
 .title.home-features {
   margin-bottom: 0;
+  width: 700px;
 }
 
 .title.card-home-feature {
@@ -6001,9 +6025,8 @@ figcaption {
 }
 
 .home-companies-wrapper {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
+ 
+  display: block;
 }
 
 .home-companies-logos {
@@ -7873,7 +7896,7 @@ figcaption {
     position: relative;
     
     /* Add linear gradient background */
-    background: linear-gradient(45deg, rgba(255, 0, 150, 0.8),#c35063d6 , #9d2e57);
+    background: linear-gradient(45deg, rgba(255, 0, 150, 0.8),#CD8AFE , #F16A78);
   
     /* Set animation for the gradient */
     background-size: 400% 400%;
@@ -10027,6 +10050,9 @@ figcaption {
   }
   .home-head-content {
     height: 122px;
+  }
+  .title.feature-text {
+    margin: 0px 15px;
   }
 
   h2 {

@@ -22,7 +22,7 @@ function FeaturedOn() {
             variants={variants}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Your voice is powerful, your story matters, and together we can create a world where women feel heard, supported, and empowered to thrive
+           ″Your voice is strong, your story is important, and together we can empower women to thrive″
           </motion.p>
           {/* <motion.div
             className="home-companies-logos"
