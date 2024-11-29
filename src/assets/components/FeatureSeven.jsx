@@ -24,7 +24,7 @@ function FeatureSeven() {
   })
 
   return (
-    <div className="section cta  ">
+    <div className="  cta  feature-seven">
       <div className="container-default w-container">
         <div className="cta-main-wrapper">
           <div
@@ -34,12 +34,12 @@ function FeatureSeven() {
           >
             <div className="cta-content">
               <animated.h2
-                className="title neutral-100 cta"
+                className="title neutral-100 cta feature-seven"
                 style={textAnimation} // Apply scroll animation to h2
               >
                 Take the first step toward emotional well-being
               </animated.h2>
-              <div className="_2-buttons cta">
+              <div className="_2-buttons cta feature-seven">
                 <animated.a
                   href="https://www.apple.com/app-store/"
                   target="_blank"

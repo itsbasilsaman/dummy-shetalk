@@ -10,7 +10,7 @@ function FeaturesTwo() {
 
   return (
     <>
-      <div className="section bg-neutral-200">
+      <div className="section bg-neutral-200 feature-two">
         <div className="container-default w-container">
           {/* Content Top Section */}
           <div
@@ -141,10 +141,10 @@ function FeaturesTwo() {
                 className="image card-home-feature-icon"
               />
               <div className="card-home-feature-content">
-                <h3 className="title card-home-feature">Interactive Workshops & Webinars
+                <h3 className="title card-home-feature"> Workshops & Webinars
                 </h3>
                 <p className="paragraph card-home-feature">
-                Participate in live sessions led by mental health experts, where you can learn practical techniques for managing stress, enhancing mindfulness, and improving emotional resilience.
+                Participate in live sessions led by mental health experts, where you can learn practical techniques for managing stress, enhancing mindfulness.
                 </p>
               </div>
             </div>

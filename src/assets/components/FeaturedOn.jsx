@@ -8,7 +8,7 @@ function FeaturedOn() {
   };
 
   return (
-    <div className="section home-companies">
+    <div className="section home-companies feature-one">
       {/* <div className="container-default w-container"> */}
         <motion.div
           className="home-companies-wrapper"
@@ -22,7 +22,7 @@ function FeaturedOn() {
             variants={variants}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-           ″Your voice is strong, your story is important, and together we can empower women to thrive″
+           ″Your voice is strong, your story is important, and together <br /> we can empower women to thrive″
           </motion.p>
           {/* <motion.div
             className="home-companies-logos"

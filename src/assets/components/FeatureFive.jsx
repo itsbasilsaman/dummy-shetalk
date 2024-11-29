@@ -14,14 +14,14 @@ function FeatureFive() {
 
   return (
     <>
-      <div className="section home-achievements">
+      <div className="section home-achievements feature-five sm:pt-[0px]">
         <div className="container-default home-achievements w-container sm:pb-[30px]">
           <div
             data-w-id="aba48c1d-8b71-82d5-66d6-5165f00fbc25"
             className="home-achievements-wrapper"
           >
             <div
-              className="image-wrapper first-perks"
+              className="image-wrapper first-perks feature-five sm:mt-[160px]"
               data-aos="zoom-in" // AOS animation type
             >
               <img

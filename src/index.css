@@ -568,23 +568,23 @@ label {
 }
 .navbar-box {
   /* background-color:rgba(0, 0, 0, 0.26); */
-  background: linear-gradient(45deg, rgba(255, 0, 149, 0.336),#ce8afe51 , #00000053);
+  background-color:rgba(255, 0, 149, 0.116) ;
   padding: 11px 19px;
   border-radius: 8px;
   /* filter: blur(0.5px); */
    /* Blur the background only */
 }
 .navbar-box a {
-  color: white;
+  color: black;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 4px 9px;
   transition: all 0.6s;
   border-radius: 4px;
 }
 .navbar-box a:hover {
-  color: white;
-  background-color: #000;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -900,6 +900,14 @@ textarea.w-input, textarea.w-select {
     left: auto;
     right: auto;
   }
+  /* .toggle-contents {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(161, 88, 88);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+  } */
 }
 
 @media screen and (max-width: 767px) {
@@ -2117,6 +2125,8 @@ textarea.w-input, textarea.w-select {
   display: none !important;
 }
 
+ 
+
 .wf-layout-layout {
   display: grid;
 }
@@ -3314,6 +3324,21 @@ textarea.w-input, textarea.w-select {
   display: inline-block;
 }
 
+.toggle-contents {
+  background-color: white;
+  z-index: 990;
+  border-bottom-left-radius: 15px;
+  width: 250px;
+}
+.toggle-contents ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+.header.main-header {
+  background-color: rgba(255, 255, 255, 0.925);
+}
+
 .w-commerce-commercebuynowbutton.w--ecommerce-buy-now-disabled {
   color: #666;
   cursor: not-allowed;
@@ -3321,6 +3346,15 @@ textarea.w-input, textarea.w-select {
   border-color: #e6e6e6;
   outline-style: none;
 }
+/* .feature-five.image-wrapper {
+  margin-top: 30px;
+} */
+
+.cta.feature-seven {
+  margin-bottom: 60px;
+}
+
+
 
 .w-commerce-commerceaddtocartoutofstock {
   background-color: #ddd;
@@ -3400,6 +3434,8 @@ textarea.w-input, textarea.w-select {
     flex-direction: column;
     align-items: stretch;
   }
+
+
 
   .w-commerce-commercelayoutmain {
     flex-basis: auto;
@@ -3911,7 +3947,7 @@ figcaption {
 }
 
 .button-primary {
-  background-color: var(--neutral-800);
+  background-color: #DA1C5C;
   color: var(--neutral-100);
   text-align: center;
   border-radius: 14px;
@@ -4927,12 +4963,12 @@ figcaption {
   max-width: 100%;
 }
 .title.feature-text {
-  font-weight: 400;
-  font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 28px;
   text-transform: uppercase;
   margin: 0px 55px;
-  background: linear-gradient(45deg, rgba(10, 10, 10, 0.8),#c35063d6 , #000000);
+  padding: 0px 12px;
+  background: linear-gradient(45deg, rgba(255, 0, 150, 0.8),#CD8AFE , #F16A78);
   background-size: 200%; /* Make the background twice the width */
   -webkit-background-clip: text; /* Ensure the gradient applies to the text */
   -webkit-text-fill-color: transparent; /* Make the text transparent */
@@ -5515,12 +5551,18 @@ figcaption {
   width: auto;
   height: auto;
 }
+.section.feature-two {
+  padding-top: 0px;
+}
+.home-companies.feature-one {
+  padding-top: 0px;
+}
 
 .image.home-hero {
   margin-right: -45px;
   position: absolute;
   right: 13%;
-  top: 0%;
+  top: -25%;
   width: 450px;
 }
 
@@ -6169,6 +6211,7 @@ figcaption {
   align-items: center;
   display: flex;
 }
+ 
 
 .first-perks-content {
   max-width: 484px;
@@ -6790,6 +6833,12 @@ figcaption {
   margin-left: 13px;
   margin-right: 13px;
 }
+
+.home-head-content {
+  /* width: 760px; */
+  margin-top: -80px;
+}
+ 
 
 .post-author-content-bottom-date-wrapper {
   display: flex;
@@ -7891,10 +7940,12 @@ figcaption {
 .hero-image-wrapper-one {
   border-radius: 60px;
     width: 100%;
-    height: 618px;
+    height: 518px;
+     /* change */
     max-width: 558px;
     position: relative;
-    
+    margin-top: 40px;  
+    /* change */
     /* Add linear gradient background */
     background: linear-gradient(45deg, rgba(255, 0, 150, 0.8),#CD8AFE , #F16A78);
   
@@ -8506,6 +8557,10 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
+  .title.home-features {
+    width: auto;
+    font-size: 24px;
+  }
   h1 {
     font-size: 50px;
   }
@@ -8533,7 +8588,7 @@ figcaption {
   }
 
   .section-styleguide {
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
   }
 
@@ -9158,6 +9213,10 @@ figcaption {
   .image-wrapper.careers-hero-1 {
     border-radius: 40px;
   }
+  .home-head-content.home {
+    font-size: 34px;
+    padding-bottom: 11px;
+  }
 
   .image-wrapper.careers-hero-2 {
     border-radius: 30px;
@@ -9188,7 +9247,7 @@ figcaption {
   .image.cta {
     max-width: 364px;
     min-width: auto;
-    margin-top: 78px;
+    margin-top: 86px;
     margin-bottom: -308px;
   }
 
@@ -10044,15 +10103,25 @@ figcaption {
 }
 
 @media screen and (max-width: 767px) {
+  ._2-buttons.feature-seven {
+    display: none;
+  }
+  .cta.feature-seven {
+    font-size: 23px;
+    
+  }
   h1 {
     margin-bottom: 16px;
     font-size: 42px;
   }
+  .hero-image-wrapper  {
+    height: auto;
+  }
   .home-head-content {
-    height: 122px;
+    padding-top: 45px;
   }
   .title.feature-text {
-    margin: 0px 15px;
+    margin: 0px;
   }
 
   h2 {
@@ -11624,6 +11693,9 @@ figcaption {
     margin-bottom: 10px;
     font-size: 35px;
   }
+  .hero-image-wrapper-one {
+    height: 414px;
+  }
 
   h2 {
     font-size: 28px;
@@ -11718,7 +11790,7 @@ figcaption {
     width: auto;
     padding-left: 15px;
     padding-right: 15px;
-    display: none;
+     
   }
 
   .button-primary.download-app._2-buttons-button {
@@ -11755,6 +11827,7 @@ figcaption {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+ 
 
   .header-navigation {
     margin-left: 16px;
@@ -11800,7 +11873,7 @@ figcaption {
   }
 
   .section {
-    padding-top: 92px;
+    padding-top: 12px;
     padding-bottom: 92px;
   }
 
@@ -13466,6 +13539,9 @@ figcaption {
   opacity: 1;
   transform: translateY(0); /* Move to its final position */
 }
+
+
+
 
 
 

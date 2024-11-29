@@ -51,19 +51,19 @@ function Footer() {
                         Features
                       </a>
                     </li>
-                    <li className="footer-nav-item">
+                    {/* <li className="footer-nav-item">
                       <a href="blog.html" className="footer-nav-link">
                         Blog
                       </a>
-                    </li>
-                    <li className="footer-nav-item">
+                    </li> */}
+                    {/* <li className="footer-nav-item">
                       <a
                         href="blog/6-great-productivity-apps-you-can-download-for-free-this-week-on-iphone.html"
                         className="footer-nav-link"
                       >
                         Blog Post
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                   {/* <ul role="list" className="footer-nav last w-list-unstyled">
                     <li className="footer-nav-item">
