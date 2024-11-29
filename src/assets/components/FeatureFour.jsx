@@ -81,7 +81,7 @@ function FeatureFour() {
               <img
                 src={Image}
                 alt="Finance - App X Webflow Template"
-                className="image second-perks"
+                className="image second-perks "
               />
             </div>
           </div>

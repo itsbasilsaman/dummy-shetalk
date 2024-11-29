@@ -4903,7 +4903,28 @@ figcaption {
 .title.h3-size.home-companies {
   margin-bottom: 0;
   margin-right: 30px;
+  max-width: 100%;
 }
+.title.feature-text {
+  font-weight: 400;
+  font-size: 27px;
+  margin: 0px 55px;
+  background: linear-gradient(45deg, rgba(10, 10, 10, 0.8),#c35063d6 , #000000);
+  background-size: 200%; /* Make the background twice the width */
+  -webkit-background-clip: text; /* Ensure the gradient applies to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  animation: gradientAnimation 3s infinite linear; /* Apply animation */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 
 .title.h3-size.card-plan {
   margin-bottom: 10px;
@@ -5488,7 +5509,7 @@ figcaption {
 }
 
 .image.card-home-feature {
-  width: 240px;
+  width: 280px;
   max-width: 44%;
   object-fit: scale-down;
   object-position: 50% 0%;
@@ -5502,6 +5523,14 @@ figcaption {
   max-width: 71%;
   border-radius: 40px;
   position: absolute;
+}
+.image.content-one {
+  max-width: 60%;
+  top: 14%;
+}
+.image.content-two {
+  max-width: 50%;
+  top: 4%;
 }
 
 .image.first-perk-icon {
@@ -5518,6 +5547,7 @@ figcaption {
   border-radius: 40px;
   position: absolute;
 }
+
 
 .image.second-perk-icon {
   width: 56px;
@@ -5541,9 +5571,9 @@ figcaption {
 }
 
 .image.cta {
-  max-width: 47%;
+  max-width: 45%;
   min-width: 364px;
-  margin-top: 13px;
+  margin-top: 27px;
   margin-bottom: -184px;
 }
 
@@ -6304,7 +6334,7 @@ figcaption {
 .footer-nav-wrapper {
   width: 100%;
   max-width: 712px;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
 }
 
@@ -13410,6 +13440,9 @@ figcaption {
   opacity: 1;
   transform: translateY(0); /* Move to its final position */
 }
+
+
+
 
 
 

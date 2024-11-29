@@ -55,7 +55,7 @@ function FeatureThree() {
                 
               }}
               data-w-id="98e9122a-9983-0aae-f65d-3385a55a9545"
-              className="image first-perks  "
+              className="image first-perks  content-one"
             />
           </div>
           <div

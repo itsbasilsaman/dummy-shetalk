@@ -9,7 +9,7 @@ function FeaturedOn() {
 
   return (
     <div className="section home-companies">
-      <div className="container-default w-container">
+      {/* <div className="container-default w-container"> */}
         <motion.div
           className="home-companies-wrapper"
           initial="hidden"
@@ -17,37 +17,27 @@ function FeaturedOn() {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6 }}
         >
-          <motion.h2
-            className="title h3-size home-companies"
+          <motion.p
+            className="title h3-size home-companies text-center feature-text"
             variants={variants}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            As featured on
-          </motion.h2>
-          <motion.div
+            Your voice is powerful, your story matters, and together we can create a world where women feel heard, supported, and empowered to thrive
+          </motion.p>
+          {/* <motion.div
             className="home-companies-logos"
             variants={variants}
             transition={{ duration: 0.6, staggerChildren: 0.4 }}
-          >
-            <motion.p className='text-center'>
+          > */}
+            {/* <motion.p className='text-center'>
             Your voice is powerful, your story matters, and together we can create a world where women feel heard, supported, and empowered to thrive
-            </motion.p>
-              
-            {/* <motion.p>
-           story matters, and together we can 
-            </motion.p>
-               
-            <motion.p>
-            create a world where women feel heard,
-            </motion.p>
-               
-            <motion.p>
-            supported, and empowered to thrive
             </motion.p> */}
+              
+              {/* Your voice is powerful, your story matters, and together we can create a world where women feel heard, supported, and empowered to thrive */}
              
-          </motion.div>
+          {/* </motion.div> */}
         </motion.div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

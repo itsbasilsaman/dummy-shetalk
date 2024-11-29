@@ -24,9 +24,7 @@ function Footer() {
                 />
               </a>
               <p className="paragraph footer-main-content-parargraph">
-                Lorem ipsum dolor sit amet consectetur adipiscin eli a sit
-                facilisis volutpat interdum non a magna tempus amet velit dolor
-                sit.
+              She Talks is a platform empowering women through mental well-being resources, community support, networking, and personal growth opportunities
               </p>
             </div>
             <div className="footer-nav-wrapper">
@@ -67,7 +65,7 @@ function Footer() {
                       </a>
                     </li>
                   </ul>
-                  <ul role="list" className="footer-nav last w-list-unstyled">
+                  {/* <ul role="list" className="footer-nav last w-list-unstyled">
                     <li className="footer-nav-item">
                       <a href="pricing.html" className="footer-nav-link">
                         Pricing
@@ -99,10 +97,10 @@ function Footer() {
                         Contact
                       </a>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
-              <div className="footer-menu-wrapper">
+              {/* <div className="footer-menu-wrapper">
                 <div className="title footer-menu">Utility Pages</div>
                 <div className="footer-menu-content">
                   <ul role="list" className="footer-nav last w-list-unstyled">
@@ -158,7 +156,7 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
               <div className="footer-menu-wrapper last">
                 <div className="title footer-menu">Follow us</div>
                 <div className="footer-menu-content">
@@ -177,7 +175,7 @@ function Footer() {
                         <div className="footer-social-media-text">Facebook</div>
                       </a>
                     </li>
-                    <li className="footer-nav-item">
+                    {/* <li className="footer-nav-item">
                       <a
                         href="https://twitter.com/"
                         target="_blank"
@@ -190,7 +188,7 @@ function Footer() {
                         />
                         <div className="footer-social-media-text">Twitter</div>
                       </a>
-                    </li>
+                    </li> */}
                     <li className="footer-nav-item">
                       <a
                         href="https://www.instagram.com/"
@@ -207,7 +205,7 @@ function Footer() {
                         </div>
                       </a>
                     </li>
-                    <li className="footer-nav-item">
+                    {/* <li className="footer-nav-item">
                       <a
                         href="https://www.linkedin.com/"
                         target="_blank"
@@ -220,8 +218,8 @@ function Footer() {
                         />
                         <div className="footer-social-media-text">LinkedIn</div>
                       </a>
-                    </li>
-                    <li className="footer-nav-item">
+                    </li> */}
+                    {/* <li className="footer-nav-item">
                       <a
                         href="https://www.youtube.com/"
                         target="_blank"
@@ -234,7 +232,7 @@ function Footer() {
                         />
                         <div className="footer-social-media-text">YouTube</div>
                       </a>
-                    </li>
+                    </li> */}
                     <li className="footer-nav-item">
                       <a
                         href="https://www.whatsapp.com/"
@@ -254,7 +252,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div
+          {/* <div
             data-w-id="9fb42a9d-7d08-ab73-7fc7-50a06cda0011"
             className="footer-content-bottom"
           >
@@ -276,7 +274,7 @@ function Footer() {
                 Webflow
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
