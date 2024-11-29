@@ -45,10 +45,10 @@ const HomeHero = () => {
             >
               She Talks <br /> Your space to <br /> grow, heal and shine.
             </h1>
-            {isMenuOpen && ( // Display content only when the toggle is open
+            { ( // Display content only when the toggle is open
               <>
                 <p
-                  className={`paragraph-large home-hero ${animateText ? 'text-animate' : ''}`}
+                  className={`paragraph-large home-hero  ${animateText ? 'text-animate' : ''}`}
                   style={{
                     transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)',
                     opacity: 1,

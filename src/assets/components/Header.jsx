@@ -81,7 +81,7 @@ function Header() {
               <a
                 href="https://play.google.com/store/apps/details?id=com.shetalks"
                 target="_blank"
-                className="button-primary header-button w-button"
+                className="button-primary header-button w-button "
               >
                 Download
               </a>
