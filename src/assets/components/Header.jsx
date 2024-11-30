@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { IoClose } from "react-icons/io5"; // Import the IoClose icon
 import Logo from '../PINK LOGO.png';
 import LogoTwo from '../New folder/43.png';
-
+import { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -42,23 +43,29 @@ function Header() {
                 <ul role="list" className="header-navigation">
                   <div className="sm:flex sm:items-center navbar-box">
                     <img src={LogoTwo} alt="" className="w-[30px] sm:mr-[10px]" />
-                    <li className="nav-item-wrapper">
-                      <a
-                        href="#home"
-                        aria-current="page"
-                        className="nav-link w--current"
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li className="nav-item-wrapper">
-                      <a className="nav-link">About Us</a>
-                    </li>
-                    <li className="nav-item-wrapper">
-                      <a className="nav-link" href="#feature">
-                        App Features
-                      </a>
-                    </li>
+                    <Link to={'/'}>
+                      <li className="nav-item-wrapper">
+                        <a
+                          href="#home"
+                          aria-current="page"
+                          className="nav-link w--current"
+                        >
+                          Home
+                        </a>
+                      </li>
+                    </Link>
+                  <Link to={'/about'}>
+                      <li className="nav-item-wrapper">
+                        <a className="nav-link">About Us</a>
+                      </li>
+                  </Link>
+                  <Link to={'/feature'}>
+                      <li className="nav-item-wrapper">
+                        <a className="nav-link" href="#feature">
+                          App Features
+                        </a>
+                      </li>
+                  </Link>
                     <li className="nav-item-wrapper">
                       <a className="nav-link" href="#contact">
                         Contact Us

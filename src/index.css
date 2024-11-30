@@ -838,6 +838,7 @@ textarea.w-input, textarea.w-select {
   .w-container {
     max-width: 728px;
   }
+  
 
   .w-hidden-main {
     display: inherit !important;
@@ -911,6 +912,9 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 767px) {
+  .image.element-one {
+    margin-bottom: -199px;
+  } 
   .w-hidden-main, .w-hidden-medium {
     display: inherit !important;
   }
@@ -3436,6 +3440,9 @@ textarea.w-input, textarea.w-select {
     flex-direction: column;
     align-items: stretch;
   }
+  .image.cta.element-two {
+    margin-top: 0px;
+  }
 
 
 
@@ -3506,6 +3513,8 @@ h2 {
   font-weight: 800;
   line-height: 1.167em;
 }
+
+
 
 h3 {
   color: var(--neutral-800);
@@ -4007,6 +4016,13 @@ figcaption {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.125em;
+}
+.cta-wrapper.element-one {
+ 
+  background: linear-gradient(45deg, rgba(255, 0, 150, 0.8),#CD8AFE , #F16A78); 
+  /* Set animation for the gradient */
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite , slideInFromRight 1s ease-out forwards; ;
 }
 
 .button-primary.download-app {
@@ -4754,6 +4770,9 @@ figcaption {
   box-shadow: none;
   padding: 70px 32px 49px;
 }
+.card.feature.element-two {
+  background-color: white;
+}
 
 .card.feature.bg-neutral-100 {
   background-color: var(--neutral-100);
@@ -4999,6 +5018,8 @@ figcaption {
   margin-bottom: 0;
   width: 700px;
 }
+
+ 
 
 .title.card-home-feature {
   margin-bottom: 12px;
@@ -5643,6 +5664,9 @@ figcaption {
   min-width: 364px;
   margin-top: 27px;
   margin-bottom: -184px;
+}
+.image.cta.element-two {
+  margin-top: -114px;
 }
 
 .image.footer-nav-link-social-media-icon {
@@ -11697,6 +11721,9 @@ figcaption {
     margin-bottom: 10px;
     font-size: 35px;
   }
+  .image.cta.element-one {
+    margin-bottom: -184px;
+  }
   .hero-image-wrapper-one {
     height: 414px;
   }
@@ -13543,6 +13570,33 @@ figcaption {
   opacity: 1;
   transform: translateY(0); /* Move to its final position */
 }
+
+.image.cta.element-one {
+  margin-top: -227px;
+}
+
+
+/* Animation classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.cta-wrapper.element-two {
+  background: linear-gradient(45deg, rgba(255, 0, 150, 0.8),#CD8AFE , #F16A78);
+  /* Set animation for the gradient */
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite , slideInFromRight 1s ease-out forwards; ;
+  border-radius: 70px;
+}
+
 
 
 
