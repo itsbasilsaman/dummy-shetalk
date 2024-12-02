@@ -39,11 +39,12 @@ function ElementTwo() {
     <>
       <div className="section bg-neutral-200">
       <div className="container-default w-container">
+      
       <div className="cta-main-wrapper">
           <div
             ref={ref}
             style={animationStyles}
-            className="cta-wrapper element-two sm:h-[360px] "
+            className="cta-wrapper element-two sm:h-[360px]   sm:block hidden"
           >
             {/* 
             
@@ -51,9 +52,9 @@ function ElementTwo() {
                 width: 800px;
                     margin-top: 23px;
                     */}
-            <div className="cta-content">
+            <div className="cta-content ">
               <animated.h2
-                className="title neutral-100 cta feature-seven sm:ml-[-1045px] sm:w-[800px] sm:mt-[23px] text-[34px] "
+                className="title neutral-100 cta feature-seven sm:ml-[-1045px] sm:w-[800px] sm:mt-[23px] text-[34px] sm:block hidden"
                 style={textAnimation} // Apply scroll animation to h2
               >
                 Empowering women through personalized coaching, supportive community, and valuable wellness resources for mental health, personal growth, and well-being
@@ -64,7 +65,7 @@ function ElementTwo() {
            
 
             <animated.img
-              className="image cta element-two sm:w-[350px] sm:mt-[0px] mt-[0px] sm:mb-[-16px] sm:absolute sm:right-[5%] sm:top-[-2%]  "
+              className="image cta element-two sm:w-[350px] sm:mt-[0px] mt-[0px] sm:mb-[-16px] sm:absolute sm:right-[5%] sm:top-[-2%] sm:block hidden "
               src={Image}
               alt="Send Payments - App X Webflow Template"
               style={{
@@ -75,7 +76,7 @@ function ElementTwo() {
               sizes="(max-width: 479px) 76vw, (max-width: 991px) 363.984375px, (max-width: 1919px) 37vw, 398.234375px"
             />
 
-            <div className="cta-bg-wrapper ">
+            <div className="cta-bg-wrapper sm:block hidden ">
               {/* <img
                 src={Image}
                 srcSet="https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-1080.jpeg 1080w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-1600.jpeg 1600w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-2000.jpeg 2000w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template.jpg 2448w"
@@ -119,7 +120,7 @@ function ElementTwo() {
             <div className="card feature element-two" data-aos="fade-up" data-aos-delay="400">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752f4d3aa403a8c0d20c_icon-6-features-app-x-template.svg"
-                alt="Send Payments - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">
@@ -132,7 +133,7 @@ function ElementTwo() {
             <div className="card feature element-two" data-aos="fade-up">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752fcb2f6d4d92bf0c86_icon-7-features-app-x-template.svg"
-                alt="Digital Wallet - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">

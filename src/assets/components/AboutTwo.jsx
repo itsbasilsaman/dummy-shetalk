@@ -45,7 +45,7 @@ function AboutTwo() {
               <img
                 className="image about-story-1"
                 src={AboutUsContentOne}
-                alt="About - App X Webflow Template"
+                alt=" "
                 sizes="(max-width: 479px) 93vw, (max-width: 991px) 94vw, 571px"
               />
             </motion.div>

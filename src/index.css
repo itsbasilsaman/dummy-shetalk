@@ -12799,6 +12799,9 @@ figcaption {
   .cta-wrapper {
     padding-bottom: 42px;
   }
+  .cta-wrapper.element-two {
+    display: none;
+  }
 
   .container-medium-680px {
     padding-left: 16px;
