@@ -19,6 +19,7 @@ import AboutTwo from './assets/components/AboutTwo'
 import AboutThree from './assets/components/AboutThree'
 import { Routes , Route } from 'react-router-dom'
 import ContactUs from './assets/components/ContactUs'
+import ContactUsTwo from './assets/components/ContactUsTwo'
  
  function App() {
    return (
@@ -62,7 +63,7 @@ import ContactUs from './assets/components/ContactUs'
       <Route path='/contactus' element={
         <>
          <ContactUs/>
-
+         <ContactUsTwo/>
         </>
       } />
 

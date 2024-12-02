@@ -4579,6 +4579,13 @@ figcaption {
   margin-bottom: 60px;
 }
 
+.contact-bg-animation {
+  background: linear-gradient(45deg, rgba(255, 0, 150, 0.8), #CD8AFE, #F16A78);
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite, slideInFromRight 1s ease-out forwards;
+}
+
+
 .link-contents  a{
   text-decoration: none;
 }
