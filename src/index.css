@@ -3446,6 +3446,9 @@ textarea.w-input, textarea.w-select {
   .image.cta.element-two {
     margin-top: 0px;
   }
+  .card.delete-account {
+    box-shadow: none;
+ }
 
 
 
@@ -4573,6 +4576,9 @@ figcaption {
 
 .paragraph.second-perk {
   margin-bottom: 0;
+}
+.paragraph.plan-excerpt.refund-policy {
+  margin-bottom: 0px;
 }
 
 .paragraph.home-achievements {
@@ -8954,6 +8960,7 @@ figcaption {
     max-width: 100%;
     min-height: 696px;
     padding: 62px 60px 72px;
+    border: none;
   }
 
   .card.contact-link {

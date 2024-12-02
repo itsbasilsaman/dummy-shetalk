@@ -21,6 +21,8 @@ import { Routes , Route } from 'react-router-dom'
 import ContactUs from './assets/components/ContactUs'
 import ContactUsTwo from './assets/components/ContactUsTwo'
 import PrivacyPolicy from './assets/components/PrivacyPolicy'
+import RefundPolicy from './assets/components/RefundPolicy'
+import DeleteAccount from './assets/components/DeleteAccount'
  
  function App() {
    return (
@@ -68,6 +70,14 @@ import PrivacyPolicy from './assets/components/PrivacyPolicy'
 
       <Route path='/privacypolicy' element={
         <PrivacyPolicy/>
+      } />
+
+      <Route path='/refundpolicy' element={
+         <RefundPolicy/>
+      } />
+
+      <Route path='/deleteaccount' element={
+          <DeleteAccount/>
       } />
 
 </Routes>
