@@ -20,14 +20,13 @@ import AboutThree from './assets/components/AboutThree'
 import { Routes , Route } from 'react-router-dom'
 import ContactUs from './assets/components/ContactUs'
 import ContactUsTwo from './assets/components/ContactUsTwo'
+import PrivacyPolicy from './assets/components/PrivacyPolicy'
  
  function App() {
    return (
      <>
       <Header/>
-     {/* <div id='home'>
-       <HomeHero/>
-     </div> */}
+     
 
       <Routes>
         <Route  path='/'  element={
@@ -67,7 +66,13 @@ import ContactUsTwo from './assets/components/ContactUsTwo'
         </>
       } />
 
+      <Route path='/privacypolicy' element={
+        <PrivacyPolicy/>
+      } />
+
 </Routes>
+
+
 
 <Footer/>
   

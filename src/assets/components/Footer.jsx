@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../PINK LOGO.png'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -61,11 +62,13 @@ function Footer() {
                         Refund Policy
                       </a>
                     </li>
-                    <li className="footer-nav-item">
-                      <a href="features.html" className="footer-nav-link">
-                        Privacy Policy
-                      </a>
-                    </li>
+                   <Link to={'/privacypolicy'}>
+                      <li className="footer-nav-item">
+                        <a href="features.html" className="footer-nav-link">
+                          Privacy Policy
+                        </a>
+                      </li>
+                   </Link>
                     {/* <li className="footer-nav-item">
                       <a href="blog.html" className="footer-nav-link">
                         Blog
