@@ -124,7 +124,7 @@ function Header() {
            <Link to={'/'}> <li><a href="#home" className="block p-2  ">Home</a></li></Link>
            <Link to={'/about'}> <li><a href="#about" className="block p-2  ">About Us</a></li></Link>
            <Link to={'/feature'}> <li><a href="#feature" className="block p-2  ">App Features</a></li></Link>
-           <Link> <li><a href="#contact" className="block p-2  ">Contact Us</a></li></Link>
+           <Link to={'/contactus'}> <li><a href="#contact" className="block p-2  ">Contact Us</a></li></Link>
           </ul>
         </div>
       )}
