@@ -1,30 +1,34 @@
-import React from 'react'
-import AboutUsContentOne from '../New folder/7.png'
- 
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import AboutUsContentOne from "../New folder/7.png";
 
 function AboutTwo() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" }); // Trigger animation when near viewport
+
+  const contentVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  };
+
   return (
     <div>
       <div className="section bg-neutral-200">
         <div className="container-default w-container">
-          <div className="w-layout-grid about-story-grid">
-            <div
+          <div className="w-layout-grid about-story-grid" ref={ref}>
+            <motion.div
               id="w-node-d517133c-8da3-fbdd-5aea-d763a923d38d-efcaa567"
-              data-w-id="d517133c-8da3-fbdd-5aea-d763a923d38d"
-              style={{
-                WebkitTransform:
-                  "translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                MozTransform:
-                  "translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                msTransform:
-                  "translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                transform:
-                  "translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-           
-              }}
+              variants={contentVariants}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"} // Animate on scroll
               className="about-story-content"
             >
-              <h2 className="title about-story  ">
+              <h2 className="title about-story">
                 The story and mission behind our company
               </h2>
               <p className="paragraph about-story">
@@ -34,37 +38,26 @@ function AboutTwo() {
                 rhoncus tristique. Suscipit diam mi massa et ut euismod nibh quis
                 pretium, ut enim proin lobortis turpis sagittis.
               </p>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
               id="w-node-_4d9f4c42-6b87-b84b-5784-2d5832e4502f-efcaa567"
               className="image-wrapper about-story-1"
+              variants={imageVariants}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"} // Animate on scroll
             >
               <img
                 className="image about-story-1"
-                src=''
+                src={AboutUsContentOne}
                 alt="About - App X Webflow Template"
-                style={{
-                  WebkitTransform:
-                    "translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  MozTransform:
-                    "translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  msTransform:
-                    "translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  transform:
-                    "translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-               
-                }}
                 sizes="(max-width: 479px) 93vw, (max-width: 991px) 94vw, 571px"
-                data-w-id="3f1884f8-0422-d139-0c95-da6cd3e24499"
-                srcSet={AboutUsContentOne}
               />
-            </div>
-           
+            </motion.div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default AboutTwo
+export default AboutTwo;

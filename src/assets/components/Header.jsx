@@ -54,23 +54,26 @@ function Header() {
                         </a>
                       </li>
                     </Link>
-                  <Link to={'/about'}>
-                      <li className="nav-item-wrapper">
-                        <a className="nav-link">About Us</a>
-                      </li>
-                  </Link>
-                  <Link to={'/feature'}>
+                    <Link to={'/feature'}>
                       <li className="nav-item-wrapper">
                         <a className="nav-link" href="#feature">
                           App Features
                         </a>
                       </li>
                   </Link>
-                    <li className="nav-item-wrapper">
-                      <a className="nav-link" href="#contact">
-                        Contact Us
-                      </a>
-                    </li>
+                  <Link to={'/about'}>
+                      <li className="nav-item-wrapper">
+                        <a className="nav-link">About Us</a>
+                      </li>
+                  </Link>
+                 
+                   <Link to={'/contactus'}>
+                      <li className="nav-item-wrapper">
+                        <a className="nav-link" href="#contact">
+                          Contact Us
+                        </a>
+                      </li>
+                   </Link>
                   </div>
                   <li className="nav-item-wrapper button-mobile">
                     <a
@@ -116,12 +119,12 @@ function Header() {
       
       {/* Toggleable Menu Content */}
       {isMenuOpen && (
-        <div className="menu-content absolute top-0 right-0 toggle-contents shadow-md p-5 w-[80%] sm:w-[50%]">
+        <div className="menu-content link-contents absolute top-0 right-0 toggle-contents shadow-md p-5 w-[80%] sm:w-[50%]">
           <ul>
-            <li><a href="#home" className="block p-2">Home</a></li>
-            <li><a href="#about" className="block p-2">About Us</a></li>
-            <li><a href="#feature" className="block p-2">App Features</a></li>
-            <li><a href="#contact" className="block p-2">Contact Us</a></li>
+           <Link to={'/'}> <li><a href="#home" className="block p-2  ">Home</a></li></Link>
+           <Link to={'/about'}> <li><a href="#about" className="block p-2  ">About Us</a></li></Link>
+           <Link to={'/feature'}> <li><a href="#feature" className="block p-2  ">App Features</a></li></Link>
+           <Link> <li><a href="#contact" className="block p-2  ">Contact Us</a></li></Link>
           </ul>
         </div>
       )}

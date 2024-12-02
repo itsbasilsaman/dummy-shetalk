@@ -18,6 +18,7 @@ import AboutOne from './assets/components/AboutOne'
 import AboutTwo from './assets/components/AboutTwo'
 import AboutThree from './assets/components/AboutThree'
 import { Routes , Route } from 'react-router-dom'
+import ContactUs from './assets/components/ContactUs'
  
  function App() {
    return (
@@ -54,6 +55,13 @@ import { Routes , Route } from 'react-router-dom'
          <AboutOne/>
          <AboutTwo/>
          <AboutThree/>
+
+        </>
+      } />
+
+      <Route path='/contactus' element={
+        <>
+         <ContactUs/>
 
         </>
       } />

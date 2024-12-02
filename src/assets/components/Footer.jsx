@@ -51,6 +51,21 @@ function Footer() {
                         Features
                       </a>
                     </li>
+                    <li className="footer-nav-item">
+                      <a href="features.html" className="footer-nav-link">
+                        Delete Account
+                      </a>
+                    </li>
+                    <li className="footer-nav-item">
+                      <a href="features.html" className="footer-nav-link">
+                        Refund Policy
+                      </a>
+                    </li>
+                    <li className="footer-nav-item">
+                      <a href="features.html" className="footer-nav-link">
+                        Privacy Policy
+                      </a>
+                    </li>
                     {/* <li className="footer-nav-item">
                       <a href="blog.html" className="footer-nav-link">
                         Blog
