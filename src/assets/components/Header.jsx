@@ -22,7 +22,7 @@ function Header() {
         data-easing="ease"
         data-easing2="ease"
         role="banner"
-        className="header w-nav absolute top-0 left-0 main-header"
+        className="header w-nav absolute top-0 left-0 main-header overflow-hidden"
       >
         <div className="container-default w-container">
           <div className="header-wrapper">
@@ -119,7 +119,7 @@ function Header() {
       
       {/* Toggleable Menu Content */}
       {isMenuOpen && (
-        <div className="menu-content link-contents absolute top-0 right-0 toggle-contents shadow-md p-5 w-[80%] sm:w-[50%]">
+        <div className="overflow-hidden menu-content link-contents absolute top-0 right-0 toggle-contents shadow-md p-5 w-[80%] sm:w-[50%]">
           <ul>
            <Link to={'/'}> <li><a href="#home" className="block p-2  ">Home</a></li></Link>
            <Link to={'/about'}> <li><a href="#about" className="block p-2  ">About Us</a></li></Link>
