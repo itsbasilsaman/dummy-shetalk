@@ -28,15 +28,11 @@ function AboutTwo() {
               animate={isInView ? "visible" : "hidden"} // Animate on scroll
               className="about-story-content"
             >
-              <h2 className="title about-story">
-                The story and mission behind our company
+              <h2 className="title about-story text-center">
+                 Our Mission 
               </h2>
               <p className="paragraph about-story">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit vel
-                consectetur fusce lorem elit maecenas et faucibus nulla arcu sem.
-                In semper ipsum eget pellentesque. A feugiat vitae id felis
-                rhoncus tristique. Suscipit diam mi massa et ut euismod nibh quis
-                pretium, ut enim proin lobortis turpis sagittis.
+              She Talks is a groundbreaking platform dedicated to empowering women by fostering connection, support, and growth. Our mission is to create a safe and inspiring space where women can share experiences, access mental health resources, engage in meaningful discussions, and build a network that uplifts and celebrates their voices. Through this, She Talks aims to enhance mental well-being and personal development, creating a community that empowers women everywhere.
               </p>
             </motion.div>
             <motion.div

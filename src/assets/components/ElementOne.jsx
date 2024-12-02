@@ -50,8 +50,7 @@ function ElementOne() {
             data-aos="fade-up" // Adding AOS animation
             data-aos-delay="200" // Adding delay
           >
-            Lorem ipsum dolor sit amet consectetur adipiscing elit urna velit
-            amet tempor egestas fringilla bibendum vel nisl sed.
+            Unlock Your Potential with She Talks: A Community of Empowerment and Support.
           </p>
           <div
             className="_2-buttons features-hero"
@@ -59,7 +58,7 @@ function ElementOne() {
             data-aos-delay="400" // Adding delay
           >
             <a
-              href="https://www.apple.com/app-store/"
+              href="https://play.google.com/store/apps/details?id=com.shetalks"
               target="_blank"
               className="button-primary download-app _2-buttons-button w-inline-block"
             >
@@ -69,7 +68,7 @@ function ElementOne() {
               </div>
             </a>
             <a
-              href="https://play.google.com/"
+              href="https://play.google.com/store/apps/details?id=com.shetalks"
               target="_blank"
               className="button-primary download-app w-inline-block"
             >

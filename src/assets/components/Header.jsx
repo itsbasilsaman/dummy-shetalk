@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
-import { IoClose } from "react-icons/io5"; // Import the IoClose icon
-import Logo from '../PINK LOGO.png';
-import LogoTwo from '../New folder/43.png';
-import { useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { IoClose } from "react-icons/io5";
+import Logo from "../PINK LOGO.png";
+import LogoTwo from "../New folder/43.png";
+import { Link, useNavigate } from "react-router-dom";
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Function to toggle the menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Scroll-to-top function
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -24,62 +29,51 @@ function Header() {
         role="banner"
         className="header w-nav absolute top-0 left-0 main-header overflow-hidden"
       >
-        <div className="container-default w-container">
+        <div className="container-default w-container overflow-hidden">
           <div className="header-wrapper">
             <div className="split-content header-right">
-              <a
-                aria-current="page"
-                className="brand w-nav-brand w--current"
-              >
-                <img
-                  src={Logo}
-                  alt="Appfly X Webflow Template - Logo"
-                  className="header-logo"
-                />
+              <a aria-current="page" className="brand w-nav-brand w--current">
+                <Link to={'/'}>
+                  <img
+                    src={Logo}
+                    alt=" "
+                    className="header-logo"
+                  />
+                </Link>
               </a>
             </div>
             <div className="split-content header-center">
               <nav role="navigation" className="nav-menu w-nav-menu">
                 <ul role="list" className="header-navigation">
-                  <div className="sm:flex sm:items-center navbar-box">
+                  <div className="sm:flex sm:items-center navbar-box sm:gap-[12px]">
                     <img src={LogoTwo} alt="" className="w-[30px] sm:mr-[10px]" />
-                    <Link to={'/'}>
-                      <li className="nav-item-wrapper">
-                        <a
-                          href="#home"
-                          aria-current="page"
-                          className="nav-link w--current"
-                        >
-                          Home
-                        </a>
+                    <Link to="/" onClick={scrollToTop}>
+                      <li className="nav-item-wrapper ">
+                        <span className="nav-link w--current hover:text-black">Home</span>
                       </li>
                     </Link>
-                    <Link to={'/feature'}>
+                    <Link to="/feature" onClick={scrollToTop}>
                       <li className="nav-item-wrapper">
-                        <a className="nav-link" href="#feature">
-                          App Features
-                        </a>
+                        <span className="nav-link hover:text-black">App Features</span>
                       </li>
-                  </Link>
-                  <Link to={'/about'}>
+                    </Link>
+                    <Link to="/about" onClick={scrollToTop}>
                       <li className="nav-item-wrapper">
-                        <a className="nav-link">About Us</a>
+                        <span className="nav-link hover:text-black">About Us</span>
                       </li>
-                  </Link>
-                 
-                   <Link to={'/contactus'}>
+                    </Link>
+                    <Link to="/contactus" onClick={scrollToTop} className="hover:bg-black">
                       <li className="nav-item-wrapper">
-                        <a className="nav-link" href="#contact">
-                          Contact Us
-                        </a>
+                        <span className="nav-link hover:text-black ">Contact Us</span>
                       </li>
-                   </Link>
+                    </Link>
                   </div>
                   <li className="nav-item-wrapper button-mobile">
                     <a
                       href="https://play.google.com/store/apps/details?id=com.shetalks"
                       target="_blank"
                       className="button-primary header-button mobile w-button"
+                      rel="noreferrer"
                     >
                       Download
                     </a>
@@ -92,17 +86,14 @@ function Header() {
                 href="https://play.google.com/store/apps/details?id=com.shetalks"
                 target="_blank"
                 className="button-primary header-button w-button "
+                rel="noreferrer"
               >
                 Download
               </a>
-              <div
-                className="menu-button w-nav-button"
-                onClick={toggleMenu}
-              >
-                {/* Conditional rendering for the menu button */}
+              <div className="menu-button w-nav-button" onClick={toggleMenu}>
                 <div className="header-menu-button-icon-wrapper">
                   {isMenuOpen ? (
-                    <IoClose className="text-2xl" /> // Render the close icon when menu is open
+                    <IoClose className="text-2xl" />
                   ) : (
                     <div className="icon-wrapper">
                       <div className="header-menu-button-icon-top" />
@@ -115,19 +106,33 @@ function Header() {
             </div>
           </div>
         </div>
+        {isMenuOpen && (
+          <div className="menu-content link-contents absolute top-0 right-0 toggle-contents shadow-md p-5 w-[80%] sm:w-[50%]">
+            <ul>
+              <Link to="/" onClick={scrollToTop}>
+                <li>
+                  <span className="block p-2">Home</span>
+                </li>
+              </Link>
+              <Link to="/about" onClick={scrollToTop}>
+                <li>
+                  <span className="block p-2">About Us</span>
+                </li>
+              </Link>
+              <Link to="/feature" onClick={scrollToTop}>
+                <li>
+                  <span className="block p-2">App Features</span>
+                </li>
+              </Link>
+              <Link to="/contactus" onClick={scrollToTop}>
+                <li>
+                  <span className="block p-2">Contact Us</span>
+                </li>
+              </Link>
+            </ul>
+          </div>
+        )}
       </div>
-      
-      {/* Toggleable Menu Content */}
-      {isMenuOpen && (
-        <div className="overflow-hidden menu-content link-contents absolute top-0 right-0 toggle-contents shadow-md p-5 w-[80%] sm:w-[50%]">
-          <ul>
-           <Link to={'/'}> <li><a href="#home" className="block p-2  ">Home</a></li></Link>
-           <Link to={'/about'}> <li><a href="#about" className="block p-2  ">About Us</a></li></Link>
-           <Link to={'/feature'}> <li><a href="#feature" className="block p-2  ">App Features</a></li></Link>
-           <Link to={'/contactus'}> <li><a href="#contact" className="block p-2  ">Contact Us</a></li></Link>
-          </ul>
-        </div>
-      )}
     </>
   );
 }

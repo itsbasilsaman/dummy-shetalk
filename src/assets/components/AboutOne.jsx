@@ -20,16 +20,28 @@ function AboutOne() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.9 } },
   };
 
-
   const gridRef = useRef(null);
 
   // Trigger animation when 0.1% of the grid box is visible
   const isGridInView = useInView(gridRef, { threshold: 0.001 });
 
- 
-
- 
-
+  const achievementsContent = [
+    {
+      number: "100",
+      label: "App downloads",
+      description: "Over 100 million downloads globally, empowering women everywhere.",
+    },
+    {
+      number: "20",
+      label: "Active users",
+      description: "20 million active users engaging daily with meaningful content.",
+    },
+    {
+      number: "35",
+      label: "Team members",
+      description: "A passionate team of over 35 members dedicated to our mission.",
+    },
+  ];
 
   return (
     <>
@@ -66,48 +78,37 @@ function AboutOne() {
             />
           </motion.div>
           <motion.div
-      ref={gridRef}
-      className="w-layout-grid about-hero-achievements-grid"
-      variants={containerVariants}
-      initial="hidden"
-      animate={isGridInView ? "visible" : "hidden"}
-    >
-      {[1, 2, 3].map((item, index) => (
-        <motion.div
-          key={index}
-          className="card about-hero-achievement"
-          variants={itemVariants}
-        >
-          <div className="card-about-hero-achievement-number">
-            {item === 1 && (
-              <>
-                100<span className="accent-text-secondary-1">M</span>
-              </>
-            )}
-            {item === 2 && (
-              <>
-                20<span className="accent-text-secondary-3">M</span>
-              </>
-            )}
-            {item === 3 && (
-              <>
-                35<span className="accent-text-secondary-5">+</span>
-              </>
-            )}
-          </div>
-          <div className="card-about-hero-achievement-content">
-            <h2 className="title h5-size card-about-hero-achievement">
-              {item === 1 && "App downloads"}
-              {item === 2 && "Active users"}
-              {item === 3 && "Team members"}
-            </h2>
-            <p className="paragraph card-about-hero-achievement">
-              Lorem ipsum dolor sit amet consectetur adipiscing
-            </p>
-          </div>
-        </motion.div>
-      ))}
-    </motion.div>
+            ref={gridRef}
+            className="w-layout-grid about-hero-achievements-grid"
+            variants={containerVariants}
+            initial="hidden"
+            animate={isGridInView ? "visible" : "hidden"}
+          >
+            {achievementsContent.map((item, index) => (
+              <motion.div
+                key={index}
+                className="card about-hero-achievement"
+                variants={itemVariants}
+              >
+                <div className="card-about-hero-achievement-number">
+                  {item.number && (
+                    <>
+                      {item.number}
+                      <span className="accent-text-secondary-1">{item.number === "100M" ? "M" : "+"}</span>
+                    </>
+                  )}
+                </div>
+                <div className="card-about-hero-achievement-content">
+                  <h2 className="title h5-size card-about-hero-achievement">
+                    {item.label}
+                  </h2>
+                  <p className="paragraph card-about-hero-achievement">
+                    {item.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </>

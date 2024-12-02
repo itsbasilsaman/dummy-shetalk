@@ -43,7 +43,7 @@ const HomeHero = () => {
                 opacity: 1,
               }}
             >
-              She Talks <br /> Your space to <br /> grow, heal and shine.
+              She Talks <br /> Your space to <br /> grow, heal and shine
             </h1>
             { ( // Display content only when the toggle is open
               <>

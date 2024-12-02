@@ -23,6 +23,7 @@ import ContactUsTwo from './assets/components/ContactUsTwo'
 import PrivacyPolicy from './assets/components/PrivacyPolicy'
 import RefundPolicy from './assets/components/RefundPolicy'
 import DeleteAccount from './assets/components/DeleteAccount'
+import AboutFour from './assets/components/AboutFour'
  
  function App() {
    return (
@@ -56,6 +57,7 @@ import DeleteAccount from './assets/components/DeleteAccount'
         <>
          <AboutOne/>
          <AboutTwo/>
+         <AboutFour/>
          <AboutThree/>
 
         </>
