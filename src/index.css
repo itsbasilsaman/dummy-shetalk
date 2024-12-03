@@ -8023,8 +8023,8 @@ figcaption {
     margin-top: 40px;  
     /* change */
     /* Add linear gradient background */
-    background: linear-gradient(45deg, rgba(255, 0, 150, 0.8),#CD8AFE , #F16A78);
-  
+    background: linear-gradient(45deg, rgba(187, 17, 116, 0.8),#ef5db2 , #da1c5c);
+    /* #da1c5c; */
     /* Set animation for the gradient */
     background-size: 400% 400%;
     animation: gradientAnimation 5s ease infinite , slideInFromRight 1s ease-out forwards; ;

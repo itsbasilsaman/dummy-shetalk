@@ -68,7 +68,7 @@ function CustomerPackeges() {
               <div className="plan-wrapper">
                 <div data-w-id="1f50cb98-5a13-e47e-3d06-d8aaddbf3882" style={{ transform: 'translate3d(0, 80px, 0)' }} className="split-content plan-body px-[15px]">
                   <div className="plan-title-wrapper">
-                    <h1 className="title plan package-head ml-[-10px]">
+                    <h1 className="title plan package-head ml-[-10px]" >
                     Customer</h1>
                     <div className="title h1-size plan-text package-head"> Packages</div>
                   </div>
