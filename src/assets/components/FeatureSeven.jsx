@@ -68,7 +68,7 @@ function FeatureSeven() {
             <animated.img
               className="image cta"
               src={Image}
-              alt="Send Payments - App X Webflow Template"
+              alt=" "
               style={{
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'translate3d(0, 0, 0)' : 'translate3d(0, 20px, 0)',

@@ -13,7 +13,7 @@ function AboutThree() {
   return (
     <>
       <div
-        className="w-full sm:px-[80px] sm:h-screen sm:py-[50px] flex items-center flex-col py-[12px] px-[14px]"
+        className="w-full sm:px-[80px] sm:h-screen sm:py-[50px] flex items-center flex-col py-[12px] px-[14px] "
         ref={ref}
       >
         <motion.h2

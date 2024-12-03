@@ -12,7 +12,7 @@ function AboutFour() {
     });
   }, []);
   return (
-    <div className="section">
+    <div className="section adjust-size">
     <div className="container-default w-container">
       <div className="first-perks-wrapper">
         <div
@@ -27,7 +27,7 @@ function AboutFour() {
           />
           <img
             src={Image}
-            alt="App - App X Webflow Template"
+            alt=" "
             className="image first-perks content-one"
             data-aos="fade-up" // Adding AOS animation type
           />

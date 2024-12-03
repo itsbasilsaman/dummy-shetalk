@@ -32,14 +32,10 @@ function FeaturesTwo() {
                 Explore What Makes She Talks the Ultimate Support Hub
               </h2>
             </div>
-            {/* <div className="split-content content-top-home-features-right">
-              <a href="features.html" className="button-primary w-button">
-                Browse features
-              </a>
-            </div> */}
+           
           </div>
 
-          {/* Features Grid Section */}
+      
           <div
             data-aos="fade-up"
             style={{
@@ -57,11 +53,7 @@ function FeaturesTwo() {
             {/* Card 1 */}
             <div className="card home-feature featured" data-aos="fade-right">
               <div className="split-content card-home-feature">
-                {/* <img
-                  src=""
-                  alt="Digital Wallet - App X Webflow Template"
-                  className="image card-home-feature-icon"
-                /> */}
+                
                 <div className="card-home-feature-content">
                   <h3 className="title card-home-feature">
                   Expert Mental Health Support
@@ -73,7 +65,7 @@ function FeaturesTwo() {
               </div>
               <img
                 src={Image}
-                alt="Digital Wallet - App X Webflow Template"
+                alt=" "
                 className="image card-home-feature"
               />
             </div>
@@ -82,7 +74,7 @@ function FeaturesTwo() {
             <div className="card home-feature" data-aos="fade-up">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b134aef3a3de0f1a597cc4_icon-2-home-features-app-x-template.svg"
-                alt="Receive Payments - App X Webflow Template"
+                alt=" "
                 className="image card-home-feature-icon"
               />
               <div className="card-home-feature-content">
@@ -101,7 +93,7 @@ function FeaturesTwo() {
             <div className="card home-feature" data-aos="fade-up">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b134ae52561bb9b5ba1c64_icon-3-home-features-app-x-template.svg"
-                alt="Monthly Reports - App X Webflow Template"
+                alt=" "
                 className="image card-home-feature-icon"
               />
               <div className="card-home-feature-content">
@@ -120,7 +112,7 @@ function FeaturesTwo() {
             <div className="card home-feature" data-aos="fade-up">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b134af5653bdf00086071f_icon-4-home-features-app-x-template.svg"
-                alt="Encryption - App X Webflow Template"
+                alt=" "
                 className="image card-home-feature-icon"
               />
               <div className="card-home-feature-content">
@@ -137,7 +129,7 @@ function FeaturesTwo() {
             <div className="card home-feature" data-aos="fade-up">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b134aee30ccd3b1c614f4f_icon-5-home-features-app-x-template.svg"
-                alt="Credit Card - App X Webflow Template"
+                alt=" "
                 className="image card-home-feature-icon"
               />
               <div className="card-home-feature-content">

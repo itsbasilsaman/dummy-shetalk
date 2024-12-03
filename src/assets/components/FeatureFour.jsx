@@ -15,7 +15,7 @@ function FeatureFour() {
 
   return (
     <>
-      <div className="section bg-neutral-200">
+      <div className="section bg-neutral-200 adjust-size">
         <div className="container-default w-container">
           <div className="second-perks-wrapper">
             <div
@@ -33,7 +33,7 @@ function FeatureFour() {
                 >
                   <img
                     src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b13bb3c9696c74c876dac5_icon-3-home-perks-app-x-template.svg"
-                    alt="Monthly Reports - App X Webflow Template"
+                    alt=" "
                     className="image second-perk-icon"
                   />
                   <div className="second-perk-content">
@@ -51,7 +51,7 @@ function FeatureFour() {
                 >
                   <img
                     src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b13bb39c5ee13b6dbec093_icon-4-home-perks-app-x-template.svg"
-                    alt="Transactions History - App X Webflow Template"
+                    alt=" "
                     className="image second-perk-icon"
                   />
                   <div className="second-perk-content">
@@ -78,7 +78,7 @@ function FeatureFour() {
               />
               <img
                 src={Image}
-                alt="Finance - App X Webflow Template"
+                alt=" "
                 className="image second-perks"
               />
             </div>

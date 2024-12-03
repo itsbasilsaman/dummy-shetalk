@@ -101,7 +101,7 @@ function ElementOne() {
             <animated.img
               className="image cta element-one sm:absolute sm:top-[40%] sm:w-[600px]  sm:mt-[-230px] mt-[0px]"
               src={Image}
-              alt="Send Payments - App X Webflow Template"
+              alt=" "
               style={{
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'translate3d(0, 0, 0)' : 'translate3d(0, 20px, 0)',
@@ -126,7 +126,7 @@ function ElementOne() {
             <div className="card feature" data-aos="fade-up">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752ebe3ede48b9074744_icon-1-features-app-x-template.svg"
-                alt="Digital Wallet - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">
@@ -140,7 +140,7 @@ function ElementOne() {
             <div className="card feature" data-aos="fade-up" data-aos-delay="200">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752e339cfb9bc73c4c4c_icon-2-features-app-x-template.svg"
-                alt="Portfolio - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">
@@ -156,7 +156,7 @@ function ElementOne() {
             <div className="card feature" data-aos="fade-up" data-aos-delay="400">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752e8cf986634363c71a_icon-3-features-app-x-template.svg"
-                alt="Send Payments - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">

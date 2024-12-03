@@ -4291,6 +4291,10 @@ figcaption {
   padding-top: 180px;
   padding-bottom: 180px;
 }
+.section.adjust-size {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
 
 .section.home-hero {
   padding-top: 0px;
@@ -4611,6 +4615,8 @@ figcaption {
 
 .link-contents  a{
   text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 
 .paragraph.footer-main-content-parargraph, .paragraph.about-hero, .paragraph.card-about-hero-achievement, .paragraph.about-story, .paragraph.about-team {

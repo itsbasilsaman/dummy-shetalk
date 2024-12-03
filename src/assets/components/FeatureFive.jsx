@@ -26,7 +26,7 @@ function FeatureFive() {
             >
               <img
                 src={Image}
-                alt="Digital Wallet - App X Webflow Template"
+                alt=" "
                 data-w-id="d40c5c42-153e-bd02-a8aa-0b469105f4c3"
                 style={{
                   WebkitTransform:

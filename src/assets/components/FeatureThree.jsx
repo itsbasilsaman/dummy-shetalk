@@ -13,7 +13,7 @@ function FeatureThree() {
   }, []);
 
   return (
-    <div className="section">
+    <div className="section adjust-size">
       <div className="container-default w-container">
         <div className="first-perks-wrapper">
           <div
@@ -28,7 +28,7 @@ function FeatureThree() {
             />
             <img
               src={Image}
-              alt="App - App X Webflow Template"
+              alt=" "
               className="image first-perks content-one"
               data-aos="fade-up" // Adding AOS animation type
             />
@@ -47,7 +47,7 @@ function FeatureThree() {
               >
                 <img
                   src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b13bb2ffb599118d50ddf8_icon-1-home-perks-app-x-template.svg"
-                  alt="Send Payments - App X Webflow Template"
+                  alt=" "
                   className="image first-perk-icon"
                 />
                 <div className="first-perk-content">
@@ -67,7 +67,7 @@ function FeatureThree() {
               >
                 <img
                   src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b13bb2d1d32703a0c01833_icon-2-home-perks-app-x-template.svg"
-                  alt="Request Payments - App X Webflow Template"
+                  alt=" "
                   className="image first-perk-icon"
                 />
                 <div className="first-perk-content">

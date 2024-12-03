@@ -84,7 +84,7 @@ function ElementThree() {
             <div className="card feature element-two" data-aos="fade-up">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752fcb2f6d4d92bf0c86_icon-7-features-app-x-template.svg"
-                alt="Digital Wallet - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">
@@ -97,7 +97,7 @@ function ElementThree() {
             <div className="card feature element-two" data-aos="fade-up" data-aos-delay="200">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752fcb2f6d8ee9bf0c87_icon-8-features-app-x-template.svg"
-                alt="Portfolio - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">
@@ -112,7 +112,7 @@ function ElementThree() {
             <div className="card feature element-two" data-aos="fade-up" data-aos-delay="400">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752f4d3aa4233bc0d20d_icon-9-features-app-x-template.svg"
-                alt="Send Payments - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">

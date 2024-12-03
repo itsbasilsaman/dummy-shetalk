@@ -1,13 +1,5 @@
- import React from 'react'
- 
-import HomeHero from './assets/components/HomeHero'
+import React from 'react' 
 import Header from './assets/components/Header'
-import FeaturedOn from './assets/components/FeaturedOn'
-import FeaturesTwo from './assets/components/FeaturesTwo'
-import FeatureThree from './assets/components/FeatureThree'
-import FeatureFour from './assets/components/FeatureFour'
-import FeatureFive from './assets/components/FeatureFive'
-import FeatureSeven from './assets/components/FeatureSeven'
 import Footer from './assets/components/Footer'
 // import ReactAppTwo from '../src/assets/components/ReactAppTwo'
 import ElementOne from './assets/components/ElementOne'
@@ -25,6 +17,9 @@ import RefundPolicy from './assets/components/RefundPolicy'
 import DeleteAccount from './assets/components/DeleteAccount'
 import AboutFour from './assets/components/AboutFour'
 import CustomerPackeges from './assets/components/CustomerPackeges'
+import 'react-toastify/dist/ReactToastify.css';
+import ContactUsJoin from './assets/components/ContactUsJoin'
+import LandingPage from './assets/pages/LandingPage'
  
  function App() {
    return (
@@ -35,15 +30,7 @@ import CustomerPackeges from './assets/components/CustomerPackeges'
        <Routes>
         <Route  path='/'  element={
           <>
-           <HomeHero/>
-           <FeaturedOn/>
-      <div id='feature'>
-        <FeaturesTwo/>
-      </div>
-      <FeatureThree/>
-      <FeatureFour/>
-      <FeatureFive/>
-      <FeatureSeven/>
+          <LandingPage/>
           </>
         } />
      
@@ -67,6 +54,7 @@ import CustomerPackeges from './assets/components/CustomerPackeges'
       <Route path='/contactus' element={
         <>
          <ContactUs/>
+         <ContactUsJoin/>
          <ContactUsTwo/>
         </>
       } />

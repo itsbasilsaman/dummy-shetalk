@@ -76,7 +76,7 @@ function CustomerPackeges() {
                   </p>
 
                   <animated.div ref={section1Ref} style={section1Animation} className='pt-[14px]'>
-                    <p className="paragraph plan-excerpt refund-policy sm:text-[24px] mb-[10px] font-semibold text-black">1. Companion Starter – Basic Package
+                    <p className="paragraph plan-excerpt refund-policy sm:text-[24px] mb-[10px] font-extrabold text-black">1. Companion Starter – Basic Package
                     </p>
                     <div className="w-layout-grid plan-features-grid">
                       
@@ -104,7 +104,7 @@ function CustomerPackeges() {
                   </animated.div>
 
                   <animated.div ref={section2Ref} style={section2Animation} className='mt-[25px]'>
-                    <p className="paragraph plan-excerpt refund-policy sm:text-[24px] mb-[10px] font-semibold text-black">2. Buddy Bundle – Standard Package
+                    <p className="paragraph plan-excerpt refund-policy sm:text-[24px] mb-[10px] font-extrabold text-black">2. Buddy Bundle – Standard Package
                     </p>
                     <div className="w-layout-grid plan-features-grid">
                       
@@ -134,7 +134,7 @@ function CustomerPackeges() {
                   </animated.div>
 
                   <animated.div ref={section3Ref} style={section3Animation} className='mt-[25px]'>
-                    <p className="paragraph plan-excerpt refund-policy sm:text-[24px] mb-[10px] font-semibold text-black">3. Ultimate Bestie Kit – Premium Package
+                    <p className="paragraph plan-excerpt refund-policy sm:text-[24px] mb-[10px] font-extrabold text-black">3. Ultimate Kit – Premium Package
 
                     </p>
                     <div className="w-layout-grid plan-features-grid">
@@ -168,7 +168,7 @@ function CustomerPackeges() {
                   </animated.div>
 
                   <animated.div ref={section4Ref} style={section4Animation} className='mt-[25px]'>
-                    <p className="paragraph plan-excerpt refund-policy sm:text-[24px] mb-[10px] font-semibold text-black">4. Pay-Per-Minute Call Option
+                    <p className="paragraph plan-excerpt refund-policy sm:text-[24px] mb-[10px] font-extrabold text-black">4. Pay-Per-Minute Call Option
 
 
                     </p>
@@ -191,7 +191,7 @@ function CustomerPackeges() {
                   </animated.div>
 
                   <animated.div ref={section5Ref} style={section5Animation} className='mt-[25px]'>
-                    <p className="paragraph plan-excerpt refund-policy sm:text-[24px] mb-[10px] font-semibold text-black">5. Chat-Only Option
+                    <p className="paragraph plan-excerpt refund-policy sm:text-[24px] mb-[10px] font-extrabold text-black">5. Chat-Only Option
 
 
 

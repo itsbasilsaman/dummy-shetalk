@@ -18,7 +18,7 @@ function AboutTwo() {
 
   return (
     <div>
-      <div className="section bg-neutral-200">
+      <div className="section bg-neutral-200 adjust-size">
         <div className="container-default w-container">
           <div className="w-layout-grid about-story-grid" ref={ref}>
             <motion.div

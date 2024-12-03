@@ -24,20 +24,9 @@ function FeaturedOn() {
           >
            ″Your voice is strong, your story is important, and together <br /> we can empower women to thrive″
           </motion.p>
-          {/* <motion.div
-            className="home-companies-logos"
-            variants={variants}
-            transition={{ duration: 0.6, staggerChildren: 0.4 }}
-          > */}
-            {/* <motion.p className='text-center'>
-            Your voice is powerful, your story matters, and together we can create a world where women feel heard, supported, and empowered to thrive
-            </motion.p> */}
-              
-              {/* Your voice is powerful, your story matters, and together we can create a world where women feel heard, supported, and empowered to thrive */}
-             
-          {/* </motion.div> */}
+          
         </motion.div>
-      {/* </div> */}
+     
     </div>
   );
 }

@@ -72,13 +72,7 @@ function ElementTwo() {
             />
 
             <div className="cta-bg-wrapper">
-              {/* <img
-                src={Image}
-                srcSet="https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-1080.jpeg 1080w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-1600.jpeg 1600w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-2000.jpeg 2000w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template.jpg 2448w"
-                sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1919px) 96vw, 1224px"
-                alt=""
-                className="bg cta"
-              /> */}
+             
             </div>
           </div>
         </div>
@@ -88,12 +82,7 @@ function ElementTwo() {
             style={animationStyles}
             className="cta-wrapper element-two sm:h-[360px]   sm:block hidden"
           >
-            {/* 
-            
-            margin-left: -1045px;
-                width: 800px;
-                    margin-top: 23px;
-                    */}
+           
             <div className="cta-content ">
               <animated.h2
                 className="title neutral-100 cta feature-seven sm:ml-[-1045px] sm:w-[800px] sm:mt-[23px] text-[34px] sm:block hidden"
@@ -109,7 +98,7 @@ function ElementTwo() {
             <animated.img
               className="image cta element-two sm:w-[350px] sm:mt-[0px] mt-[0px] sm:mb-[-16px] sm:absolute sm:right-[5%] sm:top-[-2%] sm:block hidden "
               src={MainImage}
-              alt="Send Payments - App X Webflow Template"
+              alt=" "
               style={{
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'translate3d(0, 0, 0)' : 'translate3d(0, 20px, 0)',
@@ -119,13 +108,7 @@ function ElementTwo() {
             />
 
             <div className="cta-bg-wrapper sm:block hidden ">
-              {/* <img
-                src={Image}
-                srcSet="https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-1080.jpeg 1080w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-1600.jpeg 1600w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-2000.jpeg 2000w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template.jpg 2448w"
-                sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1919px) 96vw, 1224px"
-                alt=""
-                className="bg cta"
-              /> */}
+             
             </div>
           </div>
         </div>
@@ -133,7 +116,7 @@ function ElementTwo() {
             <div className="card feature element-two" data-aos="fade-up">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752eb8cac203dd7d685f_icon-4-features-app-x-template.svg"
-                alt="Digital Wallet - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">
@@ -146,7 +129,7 @@ function ElementTwo() {
             <div className="card feature element-two" data-aos="fade-up" data-aos-delay="200">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752e50078a7c56b8fea9_icon-5-features-app-x-template.svg"
-                alt="Portfolio - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">
@@ -188,7 +171,7 @@ function ElementTwo() {
             <div className="card feature element-two" data-aos="fade-up" data-aos-delay="200">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752fcb2f6d8ee9bf0c87_icon-8-features-app-x-template.svg"
-                alt="Portfolio - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">
@@ -203,7 +186,7 @@ function ElementTwo() {
             <div className="card feature element-two" data-aos="fade-up" data-aos-delay="400">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752f4d3aa4233bc0d20d_icon-9-features-app-x-template.svg"
-                alt="Send Payments - App X Webflow Template"
+                alt=" "
                 className="image card-feature-icon"
               />
               <div className="card-feature-content">

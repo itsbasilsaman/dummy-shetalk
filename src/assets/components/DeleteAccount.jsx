@@ -1,45 +1,43 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from "@emailjs/browser";
+import { ToastContainer,toast } from 'react-toastify'
 
 function DeleteAccount() {
-  // State to store form data
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    address: '',
-  });
 
-  // Handle form input changes
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  const [name , setName] = useState('')
+  const [email , setEmail] = useState('')
+  const [phone , setPhone] = useState('')
+  const [address ,setAddress] = useState('')
 
-  // Handle form submission
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    // Send email using EmailJS
-    emailjs
-      .sendForm(
-        'service_f9a3pzy', // Your service ID
-        'template_si2yiv9', // Your template ID (create this in the EmailJS dashboard)
-        e.target, // The form data
-        'basilsaman.connects@gmail.com' // Your user ID
-      )
-      .then(
-        (result) => {
-          console.log('Email sent successfully', result.text);
-        },
-        (error) => {
-          console.log('Error sending email', error.text);
-        }
-      );
-  };
+    const serviceId = 'service_qyvhtui'
+    const templateId = 'template_si2yiv9'
+    const publicKey = 'toJUQeF1y8xCfYqJq'
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      from_number : phone,
+      from_address : address,
+      to_name: 'She Talks',
+    }
+
+    emailjs.send(serviceId,templateId,templateParams,publicKey).then((response)=> {
+      console.log('Email sent successfully!', response);
+      toast.success('Your message has been submitted.');
+      setName('')
+      setEmail('')
+      setPhone('')
+      setAddress('')
+    }).catch((error)=> {
+      console.error('Error sending email:' , error);
+      toast.error('Oops! Something went wrong.')
+    })
+
+  }
+ 
 
   return (
     <div className='w-full h-auto pb-[115px] sm:pb-[117px] flex justify-center items-center mt-[-130px] sm:mt-[0px]'>
@@ -49,7 +47,7 @@ function DeleteAccount() {
             id="wf-form-Contact-Form"
             name="wf-form-Contact-Form"
             data-name="Contact Form"
-            onSubmit={handleSubmit} // On submit, trigger the handleSubmit function
+            onSubmit={handleSubmit}
             className="contact-form"
           >
             <div className="input-wrapper">
@@ -62,8 +60,8 @@ function DeleteAccount() {
                 type="text"
                 id="name"
                 required
-                value={formData.name}
-                onChange={handleInputChange} // Handle name input changes
+                value={name}
+                onChange={(e)=>setName(e.target.value)}
               />
             </div>
             <div className="input-wrapper">
@@ -76,8 +74,8 @@ function DeleteAccount() {
                 type="email"
                 id="email"
                 required
-                value={formData.email}
-                onChange={handleInputChange} // Handle email input changes
+                value={email}
+                onChange={(e)=>setEmail(e.target.value)}
               />
             </div>
             <div className="input-wrapper">
@@ -90,8 +88,8 @@ function DeleteAccount() {
                 type="tel"
                 id="phone"
                 required
-                value={formData.phone}
-                onChange={handleInputChange} // Handle phone input changes
+                value={phone}
+                onChange={(e)=>setPhone(e.target.value)}
               />
             </div>
             <div className="input-wrapper">
@@ -102,8 +100,8 @@ function DeleteAccount() {
                 id="message"
                 name="address"
                 className="text-area w-input"
-                value={formData.address}
-                onChange={handleInputChange} // Handle address input changes
+                value={address}
+                onChange={(e)=>setAddress(e.target.value)}
               />
             </div>
             <input
@@ -113,14 +111,9 @@ function DeleteAccount() {
               value="Send message"
             />
           </form>
-          <div className="success-message w-form-done">
-            <div>Your message has been submitted. <br />We will get back to you within 24-48 hours.</div>
-          </div>
-          <div className="error-message w-form-fail">
-            <div>Oops! Something went wrong.</div>
-          </div>
         </div>
       </div>
+      <ToastContainer position="top-center" autoClose={1800} theme='light' />
     </div>
   );
 }

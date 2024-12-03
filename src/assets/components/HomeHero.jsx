@@ -95,7 +95,7 @@ const HomeHero = () => {
             <div className="hero-image-wrapper-one">
               <img
                 src={Image}
-                alt="App - App X Webflow Template"
+                alt=" "
                 className="image home-hero"
               />
               <div className="bg home-hero">
@@ -106,7 +106,7 @@ const HomeHero = () => {
         </div>
       </div>
 
-      {/* Add some responsive CSS */}
+     
        
     </div>
   );

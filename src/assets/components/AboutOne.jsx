@@ -73,7 +73,7 @@ function AboutOne() {
             <img
               className="image about-hero"
               src={AboutUsContentTwo}
-              alt="About Us - App X Webflow Template"
+              alt=""
               sizes="(max-width: 479px) 93vw, (max-width: 991px) 94vw, (max-width: 1919px) 95vw, 1025px"
             />
           </motion.div>
