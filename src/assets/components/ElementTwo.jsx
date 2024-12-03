@@ -3,7 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useInView } from 'react-intersection-observer'
 import { useSpring, animated } from '@react-spring/web'
-import Image from '../New folder/45.png'
+import Image from '../New folder/14.png'
+import MainImage from '../New folder/45.png'
 
 function ElementTwo() {
 
@@ -37,9 +38,50 @@ function ElementTwo() {
 
   return (
     <>
-      <div className="section bg-neutral-200">
+      <div className="section bg-neutral-200 changes">
       <div className="container-default w-container">
-      
+      <div className="cta-main-wrapper mb-[50px] sm:hidden block">
+          <div
+            ref={ref}
+            style={animationStyles}
+            className="cta-wrapper element-one h-[230px] sm:h-[360px] sm:rounded-[80px]"
+          >
+            <div className="cta-content">
+              <animated.h2
+                className="title neutral-100 cta feature-seven  my-[40px] ml-[10px] sm:my-[0px] sm:ml-[0px] sm:mt-[25px] sm:text-[37px]"
+                style={{opacity:'1'}} // Apply scroll animation to h2
+              >
+                Empowering women through personalized coaching & supportive community.
+              </animated.h2>
+              <div className="_2-buttons cta feature-seven">
+                
+              </div>
+            </div>
+
+            <animated.img
+              className="image cta element-two-change element-one sm:absolute sm:top-[40%] sm:w-[600px]  sm:mt-[-230px] mt-[0px]"
+              src={Image}
+              alt=" "
+              style={{
+                opacity:  1  ,
+                transform: inView ? 'translate3d(0, 0, 0)' : 'translate3d(0, 20px, 0)',
+                transition: 'all 0.5s ease-out',
+                
+              }}
+              sizes="(max-width: 479px) 76vw, (max-width: 991px) 363.984375px, (max-width: 1919px) 37vw, 398.234375px"
+            />
+
+            <div className="cta-bg-wrapper">
+              {/* <img
+                src={Image}
+                srcSet="https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-1080.jpeg 1080w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-1600.jpeg 1600w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template-p-2000.jpeg 2000w, https://assets-global.website-files.com/60b0fc1ddfea6980daf21a18/60b177aeb3c2f367fe8035b4_bg-cta-app-x-template.jpg 2448w"
+                sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1919px) 96vw, 1224px"
+                alt=""
+                className="bg cta"
+              /> */}
+            </div>
+          </div>
+        </div>
       <div className="cta-main-wrapper">
           <div
             ref={ref}
@@ -66,7 +108,7 @@ function ElementTwo() {
 
             <animated.img
               className="image cta element-two sm:w-[350px] sm:mt-[0px] mt-[0px] sm:mb-[-16px] sm:absolute sm:right-[5%] sm:top-[-2%] sm:block hidden "
-              src={Image}
+              src={MainImage}
               alt="Send Payments - App X Webflow Template"
               style={{
                 opacity: inView ? 1 : 0,
@@ -87,7 +129,7 @@ function ElementTwo() {
             </div>
           </div>
         </div>
-        <div className="w-layout-grid features-grid sm:pt-[90px] pt-[95px]">
+        <div className="w-layout-grid features-grid sm:pt-[90px] pt-[3px]">
             <div className="card feature element-two" data-aos="fade-up">
               <img
                 src="https://cdn.prod.website-files.com/60b0fc1ddfea6980daf21a18/60b6752eb8cac203dd7d685f_icon-4-features-app-x-template.svg"

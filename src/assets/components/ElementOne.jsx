@@ -37,7 +37,7 @@ function ElementOne() {
 
   return (
     <>
-      <div className="section features-hero">
+      <div className="section features-hero features-one-change">
         <div className="container-medium-730px features-hero">
           <h1
             className="title features-hero"
@@ -80,7 +80,7 @@ function ElementOne() {
           </div>
         </div>
         <div className="container-default w-container">
-        <div className="cta-main-wrapper mb-[50px]">
+        <div className="cta-main-wrapper main-content mb-[50px] sm:pt-[73px] pt-[0px]">
           <div
             ref={ref}
             style={animationStyles}

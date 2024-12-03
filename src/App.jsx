@@ -24,6 +24,7 @@ import PrivacyPolicy from './assets/components/PrivacyPolicy'
 import RefundPolicy from './assets/components/RefundPolicy'
 import DeleteAccount from './assets/components/DeleteAccount'
 import AboutFour from './assets/components/AboutFour'
+import CustomerPackeges from './assets/components/CustomerPackeges'
  
  function App() {
    return (
@@ -31,7 +32,7 @@ import AboutFour from './assets/components/AboutFour'
       <Header/>
      
 
-      <Routes>
+       <Routes>
         <Route  path='/'  element={
           <>
            <HomeHero/>
@@ -82,7 +83,13 @@ import AboutFour from './assets/components/AboutFour'
           <DeleteAccount/>
       } />
 
-</Routes>
+      <Route path='/packages' element={
+          <CustomerPackeges/>
+      } />
+
+      </Routes> 
+
+      
 
 
 

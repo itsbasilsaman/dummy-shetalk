@@ -57,6 +57,11 @@ function Header() {
                         <span className="nav-link hover:text-black">App Features</span>
                       </li>
                     </Link>
+                    <Link to="/packages" onClick={scrollToTop} className="hover:bg-black">
+                      <li className="nav-item-wrapper">
+                        <span className="nav-link hover:text-black ">Packages</span>
+                      </li>
+                    </Link>
                     <Link to="/about" onClick={scrollToTop}>
                       <li className="nav-item-wrapper">
                         <span className="nav-link hover:text-black">About Us</span>

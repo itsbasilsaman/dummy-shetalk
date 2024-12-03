@@ -8,6 +8,9 @@ html {
   -webkit-text-size-adjust: 100%;
   font-family: sans-serif;
 }
+.section.changes {
+  padding-top: 0px;
+}
 
 body {
   margin: 0;
@@ -42,6 +45,9 @@ a:active, a:hover {
 abbr[title] {
   border-bottom: 1px dotted;
 }
+/* .cta-main-wrapper.main-content {
+  padding-top: 73px;
+} */
 
 b, strong {
   font-weight: bold;
@@ -3978,6 +3984,13 @@ figcaption {
   line-height: 1.111em;
   transition:  all .4s;
   border: 2px solid transparent;
+}
+
+.package-head {
+  color:  #DA1C5C;
+}
+.package-subhead {
+  color: rgba(169, 13, 104, 0.825);
 }
  
 
@@ -11760,6 +11773,10 @@ figcaption {
   .hero-image-wrapper-one {
     height: 414px;
   }
+  .image.cta.element-two-change {
+    width: 55%;
+    margin-bottom: -42px;
+  }
 
   h2 {
     font-size: 28px;
@@ -11940,6 +11957,9 @@ figcaption {
     padding-top: 12px;
     padding-bottom: 92px;
     overflow: hidden;
+  }
+  .section.features-one-change {
+    padding-bottom: 50px;
   }
 
   .section.home-hero {
